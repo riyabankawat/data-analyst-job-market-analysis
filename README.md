@@ -47,7 +47,7 @@ Based on this analysis, I prioritized strengthening my SQL skills first, since i
 |---|---|
 | `data_analyst_with_skills.csv` | Cleaned dataset: 408 postings with extracted skill flags |
 | `data_analyst_jobs.db` | SQLite database used for SQL analysis |
-| `analysis.py` | Full Python script: filtering, cleaning, skill extraction, salary analysis |
+| `analysis.ipynb` | Full Python script: filtering, cleaning, skill extraction, salary analysis |
 | `skill_demand_chart.png` | Chart: % of postings mentioning each skill |
 | `salary_by_skill_chart.png` | Chart: average salary with vs. without each skill |
 
