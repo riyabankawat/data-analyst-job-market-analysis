@@ -42,9 +42,7 @@ While applying for Data Analyst roles, I analyzed 400+ real "Data Analyst" job p
 
 ## Interactive Dashboard
 
-![Dashboard screenshot](dashboard_screenshot.png)
-
-Built a Power BI dashboard on top of this data — click any skill in the slicer to see job count, average salary, top states, and remote share update live.
+Built a Power BI dashboard on top of this data — click any skill in the slicer to see job count, average salary, top states, and remote share update live. Open `data_analyst_dashboard.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
 ## Takeaway
 
