@@ -45,11 +45,20 @@ Based on this analysis, I prioritized strengthening my SQL skills first, since i
 
 | File | Description |
 |---|---|
+| `analysis.ipynb` | Full notebook: filtering, cleaning, skill extraction, SQL analysis, charts |
 | `data_analyst_with_skills.csv` | Cleaned dataset: 408 postings with extracted skill flags |
 | `data_analyst_jobs.db` | SQLite database used for SQL analysis |
-| `analysis.ipynb` | Full Python script: filtering, cleaning, skill extraction, salary analysis |
 | `skill_demand_chart.png` | Chart: % of postings mentioning each skill |
 | `salary_by_skill_chart.png` | Chart: average salary with vs. without each skill |
+| `requirements.txt` | Python dependencies |
+
+## Running it yourself
+
+```bash
+pip install -r requirements.txt
+```
+
+The notebook expects the raw `postings.csv` from the [Kaggle LinkedIn Job Postings dataset](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings) in the repo root (not included here — it's ~500MB). Everything downstream of that (the cleaned CSV, the SQLite db, and both charts) is already included, so you don't need the raw file just to explore the results.
 
 ## Limitations
 
