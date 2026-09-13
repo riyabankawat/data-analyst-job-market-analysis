@@ -14,7 +14,8 @@ While applying for Data Analyst roles, I analyzed 400+ real "Data Analyst" job p
 
 - **Python** (pandas) — data cleaning, filtering a 3.38M-row dataset in chunks, regex-based skill extraction from unstructured description text
 - **SQL** (SQLite) — aggregation queries (GROUP BY, CASE WHEN, multi-column grouping) to analyze skill and salary patterns
-- **Matplotlib** — visualizations
+- **Matplotlib** — static visualizations
+- **Power BI** — interactive dashboard with a live skill filter, built on top of the same cleaned data
 
 ## Process
 
@@ -37,9 +38,17 @@ While applying for Data Analyst roles, I analyzed 400+ real "Data Analyst" job p
 
 **6. Job concentration**: Outside of nationwide/remote listings, New York, NY had the highest concentration of postings (12), followed by Richmond, VA and Plano, TX.
 
+**7. Tableau and Power BI aren't interchangeable, despite near-identical demand.** Both appear in ~21% of postings, but Tableau postings averaged $110,970/year (+$8,553 vs. postings without it), while Power BI postings averaged slightly *less* than postings without it ($101,836 vs. $106,971). A plausible explanation — not confirmed by this data alone — is that Power BI shows up more often in junior/operational reporting roles, similar to the Excel pattern above, while Tableau skews toward more analytics-heavy postings.
+
+## Interactive Dashboard
+
+![Dashboard screenshot](dashboard_screenshot.png)
+
+Built a Power BI dashboard on top of this data — click any skill in the slicer to see job count, average salary, top states, and remote share update live.
+
 ## Takeaway
 
-Based on this analysis, I prioritized strengthening my SQL skills first, since it's both the most commonly requested skill and the one most associated with higher pay — followed by Python and one visualization tool (Tableau or Power BI) as a differentiator rather than a starting point.
+Based on this analysis, I prioritized strengthening my SQL skills first, since it's both the most commonly requested skill and the one most associated with higher pay — followed by Python and Tableau specifically as a differentiator, since Tableau showed a real salary premium in this data while Power BI did not, despite similar demand.
 
 ## Files in this repo
 
@@ -50,6 +59,8 @@ Based on this analysis, I prioritized strengthening my SQL skills first, since i
 | `data_analyst_jobs.db` | SQLite database used for SQL analysis |
 | `skill_demand_chart.png` | Chart: % of postings mentioning each skill |
 | `salary_by_skill_chart.png` | Chart: average salary with vs. without each skill |
+| `data_analyst_dashboard.pbix` | Interactive Power BI dashboard — open in Power BI Desktop to filter live |
+| `dashboard_screenshot.png` | Preview of the dashboard in use |
 | `requirements.txt` | Python dependencies |
 
 ## Running it yourself
