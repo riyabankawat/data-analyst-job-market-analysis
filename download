@@ -1,0 +1,13 @@
+# Raw source data (too large for git; download from Kaggle, see README)
+postings.csv
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
